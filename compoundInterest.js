@@ -3,7 +3,7 @@ document.getElementById("calculate").onclick = function () {
     var a = document.getElementById("addition").value;
     var y = document.getElementById("years").value;
     var i = document.getElementById("interest").value;
-    var t = p * (i / 100 + 1) ^ y;
+    var t = Math.pow((i / 100 + 1), y) * p;
 
-    document.getElementById("total").innerHTML = "The total would be: " + t + " after " + y + " years";
+    document.getElementById("total").innerHTML = "The total would be: " + t.toFixed(2) + " after " + y + " years";
 }
