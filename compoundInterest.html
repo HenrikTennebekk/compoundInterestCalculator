@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Compound Interest Calculator</title>
+        <style type="text/css">
+            h1 {
+                text-align: center;
+            }
+
+            #calculator {
+                margin-right: 25%;
+                margin-left: 25%;
+                text-align: center;
+                background-color: orange;
+                width: 50%;
+            }
+
+            #calculator > button {
+                height: 15%;
+                width: 25%;
+            }
+
+            #calculator > th {
+                width: 20%;
+            }
+
+            #calculator > td {
+                width: 20%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Compound Interest calculator</h1>
+        <div id="calculator">
+            <table>
+                <thead>
+                    <th>Initial investment</th>
+                    <th>Annual Addition</th>
+                    <th>Years of compouning</th>
+                    <th>Interest rate %</th>
+                </thead>
+                <tbody>
+                    <td><input type="number" id="principal" value=""></td>
+                    <td><input type="number" id="addition" value=""></td>
+                    <td><input type="number" id="years" value=""></td>
+                    <td><input type="number" id="interest" value=""></td>
+                </tbody>
+            </table>
+            <br>
+            <button type="button" id="calculate">Calculate</button>
+        </div>
+        <h1 id="total"></h1>
+        <script src="compoundInterest.js" charset="utf-8"></script>
+    </body>
+</html>
