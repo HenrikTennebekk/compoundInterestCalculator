@@ -4,7 +4,8 @@ document.getElementById("calculate").onclick = function () {
     var y = document.getElementById("years").value;
     var i = document.getElementById("interest").value;
     var n = document.getElementById("number").value;
-    var g = Math.pow((i / 100 + 1), y) * p;
+    var ry = n * y
+    var g = Math.pow(((i / 100) / n + 1), ry) * p;
     var gt = g - ((g - p) * (0.22 * 1.44));
     var tax = document.getElementById("tax");
 
